@@ -1,12 +1,43 @@
-- 👋 Hi, I’m @Hemadoddaka2005
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
-
-<!---
-Hemadoddaka2005/Hemadoddaka2005 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+print ("     Welcome to Bank Managing System     ") 
+while(True):
+ print("1.user Registeration")
+ print("2.User login")
+ o=int(input())
+ if(o==1):
+     acc_no1=int(input("acc_no1:"))
+     name1=str(input("name1:"))
+     b= int(input("balance:"))
+     n=int(input("n:"))
+     ifsc_code=str(input("ifsc_code:"))
+     continue
+ print(" ")
+ if(o==2):
+     acc_no2= int(input("acc_no2:"))
+     name2=str(input("name2:"))
+     if(acc_no1==acc_no2 and name1==name2):
+         print("sucessfully login") 
+     else: 
+         print("login failed")
+         break
+ print("1.credit")
+ print("2.debit")
+ print("3.check balance")
+ p=int(input() )
+ if(p==1):
+     c=int(input("c:"))
+     b=b+c
+     print(b)
+ elif(p==2):
+     d=int(input("d:"))
+     b=b-d
+     if(b<d):
+         print ("insufficient balance")
+     else:
+         print(b)
+ elif(p==3):
+      print("enter a code")
+      m=int(input())
+      if(n==m):
+         print(b)
+ elif(p==4):
+      break
